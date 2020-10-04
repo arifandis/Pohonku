@@ -11,6 +11,7 @@ import com.cahstudio.pohonku.R;
 import com.cahstudio.pohonku.ui.detailtree.DetailTreeActivity;
 import com.cahstudio.pohonku.ui.gli.GLIActivity;
 import com.cahstudio.pohonku.ui.reader.NFCReaderActivity;
+import com.cahstudio.pohonku.ui.sig.SIGActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), GLIActivity.class));
+            }
+        });
+
+        cvSIG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), SIGActivity.class));
             }
         });
 
