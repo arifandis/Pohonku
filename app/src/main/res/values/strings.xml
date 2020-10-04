@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SADAPO</string>
+
+    <string name="have_account">Sudah Punya Akun?</string>
+    <string name="please_input_your_email_and_password">Silahkan masukkan email dan password Anda</string>
+    <string name="email">Email</string>
+    <string name="input_your_email">Masukkan email Anda</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Lupa password?</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Belum memiliki akun?</string>
+    <string name="register_now">Register sekarang</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
