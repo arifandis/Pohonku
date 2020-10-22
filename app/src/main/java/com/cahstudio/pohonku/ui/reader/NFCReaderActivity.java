@@ -41,6 +41,7 @@ public class NFCReaderActivity extends NfcActivity{
 //                return writeUtility.writeEmailToTagFromIntent("some@email.tld","Subject","Message",getIntent());
 //            }
 //        };
+        scanning();
     }
 
     void scanning(){

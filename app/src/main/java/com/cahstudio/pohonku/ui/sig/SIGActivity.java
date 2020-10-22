@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.cahstudio.pohonku.R;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -30,8 +31,10 @@ public class SIGActivity extends AppCompatActivity {
 
                 LatLng indonesiaCoordinat = new LatLng(2.2059154,109.4387386);
                 LatLngBounds indonesia = new LatLngBounds(indonesiaCoordinat, indonesiaCoordinat);
-                mapIndonesia.setLatLngBoundsForCameraTarget(indonesia);
-                mapIndonesia.animateCamera(CameraUpdateFactory.newLatLngZoom(indonesiaCoordinat, 3.0f));
+                mapIndonesia.moveCamera(CameraUpdateFactory.newLatLngZoom(
+                        indonesiaCoordinat, 3));
+//                mapIndonesia.setLatLngBoundsForCameraTarget(indonesia);
+//                mapIndonesia.animateCamera(CameraUpdateFactory.newLatLngZoom(indonesiaCoordinat, 3.0f));
             }
         });
 
@@ -42,10 +45,12 @@ public class SIGActivity extends AppCompatActivity {
             public void onMapReady(GoogleMap googleMap) {
                 mapMalang = googleMap;
 
-                LatLng malangCoordinat = new LatLng(-7.9784695,112.561742);
+                LatLng malangCoordinat = new LatLng(-7.964013, 112.633841);
                 LatLngBounds malang = new LatLngBounds(malangCoordinat, malangCoordinat);
-                mapMalang.setLatLngBoundsForCameraTarget(malang);
-                mapMalang.animateCamera(CameraUpdateFactory.newLatLngZoom(malangCoordinat, 10.0f));
+                mapMalang.moveCamera(CameraUpdateFactory.newLatLngZoom(
+                        malangCoordinat, 11));
+//                mapMalang.setLatLngBoundsForCameraTarget(malang);
+//                mapMalang.animateCamera(CameraUpdateFactory.newLatLngZoom(malangCoordinat, 10.0f));
             }
         });
     }

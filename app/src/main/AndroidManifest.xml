@@ -30,17 +30,27 @@
         -->
         <activity
             android:name=".ui.sig.MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait"></activity>
 
-        <activity android:name=".ui.sig.SIGActivity" />
-        <activity android:name=".ui.gli.GLIActivity" />
-        <activity android:name=".ui.addtree.AddTreeActivity" />
-        <activity android:name=".ui.reader.NFCReaderActivity" />
-        <activity android:name=".ui.detailtree.DetailTreeActivity" />
-        <activity android:name=".ui.register.RegisterActivity" />
-        <activity android:name=".ui.landing.LandingActivity" />
-        <activity android:name=".ui.login.LoginActivity" />
-        <activity android:name=".ui.SplashScreenActivity">
+        <activity android:name=".ui.sig.SIGActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.gli.GLIActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.addtree.AddTreeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.reader.NFCReaderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.detailtree.DetailTreeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.register.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.landing.LandingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.SplashScreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
