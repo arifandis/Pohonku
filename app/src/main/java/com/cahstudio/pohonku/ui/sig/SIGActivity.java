@@ -1,8 +1,10 @@
 package com.cahstudio.pohonku.ui.sig;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageButton;
 
 import android.os.Bundle;
+import android.view.View;
 
 import com.cahstudio.pohonku.R;
 import com.google.android.gms.maps.CameraUpdate;
@@ -16,11 +18,20 @@ import com.google.android.gms.maps.model.LatLngBounds;
 public class SIGActivity extends AppCompatActivity {
 
     private GoogleMap mapIndonesia, mapMalang;
+    private AppCompatImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_s_i_g);
+
+        btnBack = findViewById(R.id.appCompatImageButton);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         SupportMapFragment mapFragmentIndo = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapsIndonesia);
